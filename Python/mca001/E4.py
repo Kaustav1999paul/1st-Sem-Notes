@@ -3,24 +3,18 @@ from operation import*
 obj1 = operation()
 obj2 = operation()
 
-print("__MENU__")
-print("1: Add")
-print("2: Sub")
-print("3: Mul")
-print("4: Div")
-print("5: Exit")
-
 n = int(input("Enter option no: "))
-
 obj1.listAdd(n)
 obj2.listAdd(n)
 
-while(n != 5):
+while True:
 	print("1: Add")
 	print("2: Sub")
 	print("3: Mul")
 	print("4: Div")
 	print("5: Exit")
+
+	n = int(input("Enter option no: "))
 
 	if(n == 1):
 		obj1+obj2
