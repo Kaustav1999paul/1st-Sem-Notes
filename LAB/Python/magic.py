@@ -5,7 +5,7 @@ class Op:
  def get(self):
   n=int(input("\nEnter the size of the list : "))
   for i in range(n):
-   self.L1.append(int(input(f"\nEnter the element {i+1} : ")))
+   self.L1.append(int(input(f"\nEnter the element: ")))
   print(f"\nThe list is : {self.L1}")
 
  def __add__(self,other):

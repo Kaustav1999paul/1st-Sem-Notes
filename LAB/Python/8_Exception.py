@@ -41,7 +41,7 @@ while True:
    print("Successfully Closed the file\n")
  elif ch==5:
   try:
-   f=opens("file1.txt",'r')
+   f=open("file1.txt",'r')
    print("Success!!")
   except NameError as e:
    print(f"\nNameError has occurred\nError Message : {e}\n")

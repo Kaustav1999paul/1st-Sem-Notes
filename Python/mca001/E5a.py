@@ -12,7 +12,6 @@ class Student():
 		print("Age: ", self.age)
 		print("-----------")
 
-
 #-------------------------------------------------------------------
 
 class UGStudent(Student):
