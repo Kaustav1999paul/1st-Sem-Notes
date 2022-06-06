@@ -11,3 +11,7 @@ class A:
 obj = A()
 dictionary = obj.__dict__
 print(dictionary)
+
+for x in dictionary.items():
+	print(*x)
+

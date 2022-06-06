@@ -5,18 +5,18 @@ def createTable(c):
     c.execute(sql)
     print("Successfully created")
 
-def addMany(c,d):
+def addMany(cursor,db):
     sql="INSERT INTO employee(emp_id,emp_name,emp_age,emp_salary) VALUES(%s,%s,%s,%s)"
     value=[('1','Kishan',22,20330455506.0),('3','Krupa',21,200110044.0),('2','Jay',22,20035033.0),('4','Indrabhushan',22,20005521.0)]
-    c.executemany(sql,value)
+    cursor.executemany(sql,value)
     print("Added Successfully")
-    d.commit()
+    db.commit()
     
-def searchData(c,name):
+def searchData(cursor,name):
     sql="SELECT * FROM employee WHERE emp_name = '%s' "%name
-    c.execute(sql)
+    cursor.execute(sql)
     print("Data Found")
-    for row in c:
+    for row in cursor:
         print(row)
 
 def displayData(c):

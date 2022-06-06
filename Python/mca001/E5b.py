@@ -31,7 +31,7 @@ class Derive1(Student):
 
 	def display(self):
 		print("Total: ", self.total)
-		per = (self.total*100)/5
+		per = (self.total/500)*100
 		print("Percent: ", per)
 
 #------------------------------------------------------------
@@ -46,7 +46,7 @@ class Derive2(Derive1):
 
 #------------------------------------------------------------
 while True:
-        print("1. D1\n2.D2\n3.Exit")
+        print("1. D1\n2. D2\n3. Exit")
         n = int(input("Enter Option: "))
         if n == 1:
            d1=Derive1()
