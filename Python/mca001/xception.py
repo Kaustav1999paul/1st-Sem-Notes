@@ -30,8 +30,10 @@ while True:
             print(e)
     elif ch==4:
         try:
-            f1=open("f9.txt",'r')
-            print("file found")
+            f = open('f3', 'w+')
+            f.write("Hello")
+            f2 = open('f2', 'r')
+            print("Success")
         except IOError as e:
             print("file not found")
             print(e) 
